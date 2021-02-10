@@ -1,0 +1,38 @@
+:root {
+    --bg: #F9F9F9;
+
+    --bg-input: #EDEDED;
+    --color-text-primary: #111111;
+    --color-text: #999999;
+
+    --icon-facebook: #1A77F3;
+    --icon-google: #ffffff;
+    --icon-apple: #000000;
+
+    --help: #AFAFAF;
+    --alerta: #D653DF;
+}
+html {
+    font-size: 16px;
+    line-height: 22px;
+}
+body {
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100%;
+    height: 724px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 0 15px -5px #555555;
+    position: relative;
+}

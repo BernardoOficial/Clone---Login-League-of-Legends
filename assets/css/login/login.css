@@ -1,0 +1,146 @@
+.login {
+    min-width: 400px;
+    width: 400px;
+    height: 100%;
+    padding: 0 50px;
+
+    background: var(--bg);
+}
+.login__campo-logo {
+    margin-top: 70px;
+    text-align: center;
+}
+.login__logo {
+    height: 30px;
+}
+.login__title {
+    margin: 70px 0 30px;
+
+    font-weight: 600;
+    letter-spacing: -2px;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: var(--color-text-primary);
+}
+.login__campo {
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.login__campo-input {
+    width: 100%;
+    padding: 22px 15px 8px 10px;
+
+    background: var(--bg-input);
+    border: none;
+    outline: none;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--color-text-primary);
+    border-radius: 5px;
+}
+.login__campo-input:focus {
+    box-shadow: inset 0 0 0 2px var(--color-text-primary);
+}
+.login__campo-input:focus ~ .login__campo-label,
+.login__campo-input:valid ~ .login__campo-label {
+    top: 0px;
+    bottom: initial;
+    left: 10px;
+
+    font-weight: 400;
+    font-size: 10px;
+    transition: 0.2s linear;
+    transform: translateY(0%);
+}
+.login__campo-label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin: auto 0;
+    height: 25px;
+
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: var(--color-text);
+    transform: translateY(-50%);
+
+    transition: 0.2s linear;
+}
+.login__redes-sociais {
+    display: flex;
+}
+.login__redes-sociais-item {
+    width: 33.33%;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 2px;
+}
+.login__redes-sociais-item:nth-child(1) { background-color: var(--icon-facebook); }
+.login__redes-sociais-item:nth-child(3) { background-color: var(--icon-apple); }
+.login__redes-sociais-item a {
+    font-family: FontAwesome;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    width: 18px;
+    height: 18px;
+}
+.login__redes-sociais-item:nth-child(1) a::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ffffff;
+
+    content: "\f39e";
+    color: var(--icon-facebook); 
+}
+.login__redes-sociais-item:nth-child(3) a::before {
+    content: "\f179";
+    font-size: 20px;
+    color: #ffffff; 
+}
+.login__manter-login {
+    margin-top: 15px;
+}
+.login__manter-login-campo {
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: var(--bg-input);
+}
+.login__manter-login-campo:checked ~ .login__manter-login-label {
+    color: var(--color-text-primary);
+}
+.login__manter-login-label {
+    font-size: 13px;
+    color: var(--color-text);
+}
+.login__help {
+    margin-top: 190px;
+}
+.login__link {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--color-text);
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -1px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone - Login | League of Legends</title>
+
+    <!-- Google fonts - Open Sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/e9b4eca67c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/css/login/login.css">
+
+    <link rel="stylesheet" href="./assets/css/background/background.css">
+
+    <link rel="stylesheet" href="./assets/css/navegation/navegation.css">
+
+</head>
+<body>
+
+    <section class="wrapper">
+
+        <nav class="navegation">
+            <button class="btns navegation__minimizar"></button>
+            <button class="btns navegation__help"></button>
+            <button class="btns navegation__close"></button>
+        </nav>
+
+        <aside class="login">
+            
+            <figure class="login__campo-logo">
+                <img class="login__logo" src="./assets/images/logo-riot-games.png" alt="Riot Games">
+            </figure>
+
+            <section class="login__acesso">
+                <h1 class="login__title">Fazer login</h1>
+
+                <div class="login__campo">
+                    <input class="login__campo-input" type="text" id="nome" name="nome" required placeholder=" ">
+                    <label class="login__campo-label" for="nome">Nome de usuário</label>
+                </div>
+                
+                <div class="login__campo">
+                    <input class="login__campo-input" type="text" id="senha" name="senha" required placeholder=" ">
+                    <label class="login__campo-label" for="nome">Senha</label>
+                </div>
+
+                <ul class="login__redes-sociais">
+                   <li class="login__redes-sociais-item">
+                       <a href="#"></a>
+                   </li> 
+                   <li class="login__redes-sociais-item">
+                       <a href="#"><img src="./assets/images/icon-google.svg" alt="Google"></a>
+                   </li> 
+                   <li class="login__redes-sociais-item">
+                       <a href="#"></a>
+                   </li>
+                </ul>
+
+                <div class="login__manter-login">
+                    <input class="login__manter-login-campo" type="checkbox" name="manter-login" id="manter-login">
+                    <label class="login__manter-login-label" for="manter-login">Manter login</label>
+                </div>
+            </section>
+
+            <section class="login__help">
+                <a href="#" class="login__link">Não consegue iniciar sessão?</a>
+                <a href="#" class="login__link">Criar conta</a>
+            </section>
+
+        </aside>
+
+        <figure class="background">
+            <img class="background__image">
+        </figure>
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+.navegation {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.btns {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 0 10px;
+    padding: 10px;
+}
+.navegation__minimizar::before {
+    content: "\f2d1";
+    font-family: FontAwesome;
+    font-size: 15px;
+    color: #ccc;
+}
+.navegation__help::before {
+    content: "\f128";
+    font-family: FontAwesome;
+    font-size: 15px;
+    color: #ccc;
+}
+.navegation__close::before {
+    content: "\f00d";
+    font-family: FontAwesome;
+    font-size: 15px;
+    color: #ccc;
+}
