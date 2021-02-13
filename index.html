@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./assets/css/background/background.css">
 
     <link rel="stylesheet" href="./assets/css/navegation/navegation.css">
+    <link rel="stylesheet" href="./assets/css/config/config.css">
 
 </head>
 <body>
@@ -31,6 +32,10 @@
             <button class="btns navegation__minimizar"></button>
             <button class="btns navegation__help"></button>
             <button class="btns navegation__close"></button>
+        </nav>
+
+        <nav class="config">
+            <div class="config__button"></div>
         </nav>
 
         <aside class="login">
@@ -65,8 +70,11 @@
                 </ul>
 
                 <div class="login__manter-login">
-                    <input class="login__manter-login-campo" type="checkbox" name="manter-login" id="manter-login">
-                    <label class="login__manter-login-label" for="manter-login">Manter login</label>
+                    <div>
+                        <input class="login__manter-login-campo" type="checkbox" name="manter-login" id="manter-login">
+                        <span></span>
+                        <label class="login__manter-login-label" for="manter-login">Manter login</label>
+                    </div>
                 </div>
             </section>
 
@@ -78,6 +86,9 @@
         </aside>
 
         <figure class="background">
+            <div class="background__notification">
+                <span class="background__icon"></span>
+            </div>
             <img class="background__image">
         </figure>
 

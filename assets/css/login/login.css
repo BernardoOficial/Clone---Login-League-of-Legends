@@ -117,14 +117,44 @@
 .login__manter-login {
     margin-top: 15px;
 }
+.login__manter-login > div {
+    /* width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    overflow: hidden; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 .login__manter-login-campo {
+    width: 15px;
+    height: 15px;
     border: none;
     outline: none;
+    appearance: none;
     padding: 5px;
     background-color: var(--bg-input);
+    margin-right: 5px;
+}
+.login__manter-login > div > span {
+    position: absolute;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 2px;
+    background-color: var(--bg-input);
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
 }
 .login__manter-login-campo:checked ~ .login__manter-login-label {
     color: var(--color-text-primary);
+}
+.login__manter-login-campo:checked ~ span {
+    background-color: var(--checked);
+    background-image: url(../../images/checked.svg);
 }
 .login__manter-login-label {
     font-size: 13px;
@@ -142,5 +172,8 @@
     color: var(--color-text);
     font-weight: 700;
     text-decoration: none;
-    letter-spacing: -1px;
+    letter-spacing: 0.5px;
+}
+.login__link:hover {
+    color: var(--color-text-primary);
 }

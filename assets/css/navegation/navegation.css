@@ -2,29 +2,48 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
 }
 .btns {
     border: none;
     outline: none;
     background: transparent;
-    margin: 0 10px;
-    padding: 10px;
+    margin: 10px 15px;
 }
-.navegation__minimizar::before {
+.navegation__minimizar {
+    width: 20px;
+    height: 15px;
+    background-image: url(../../images/minimizar.svg);
+    background-position: -5px -2px;
+    background-repeat: no-repeat;
+}
+/* .navegation__minimizar::before {
     content: "\f2d1";
     font-family: FontAwesome;
     font-size: 15px;
     color: #ccc;
-}
+} */
 .navegation__help::before {
     content: "\f128";
+
+    display: flex;
     font-family: FontAwesome;
     font-size: 15px;
     color: #ccc;
 }
-.navegation__close::before {
+.navegation__close {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/close2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .navegation__close::before {
     content: "\f00d";
     font-family: FontAwesome;
     font-size: 15px;
     color: #ccc;
-}
+} */

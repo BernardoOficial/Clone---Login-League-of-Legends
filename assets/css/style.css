@@ -9,8 +9,11 @@
     --icon-google: #ffffff;
     --icon-apple: #000000;
 
-    --help: #AFAFAF;
+    --help: #858383;
+    --help-hover: #AFAFAF;
     --alerta: #D653DF;
+    --alerta-hover: #972c9e;
+    --checked: #AC3531;
 }
 html {
     font-size: 16px;
